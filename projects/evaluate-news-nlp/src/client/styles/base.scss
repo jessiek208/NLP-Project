@@ -1,7 +1,19 @@
+$emphasisColor: #22223B;
+$fhColor: #4A4E69;
+$secondaryColor: #F2E9E4;
+
+$lightText: #fff;
+$darkText: #000;
+
+$emphasisFont: 'Ubuntu', Sans-Serif;
+$mainFont: 'Open Sans', Sans-Serif;
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #9A8C98;
+    font-family: $mainFont;
 }
 
 main {

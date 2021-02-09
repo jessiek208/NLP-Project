@@ -12,6 +12,9 @@ const { DefaultDeserializer } = require('v8');
 
 const app = express()
 
+const cors = require('cors');
+app.use(cors());
+
 app.use(express.static('dist'))
 
 app.get('/', function (req, res) {
@@ -25,9 +28,9 @@ app.listen(8081, function () {
 })
 
 
-app.get('/test', function (req, res) {
+/*app.get('/test', function (req, res) {
     res.send(mockAPIResponse)
-})
+})*/
 
 app.post('/analyze', bodyParser.json(), function(req, res) {
     const API_Key = process.env.API_Key;

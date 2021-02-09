@@ -1,5 +1,18 @@
+@import "base.scss";
+
 header {
     display: flex;
     justify-content: space-between;
+    align-content: center;
     padding: 10px 40px;
+    background-color: $fhColor;
+    color: $lightText;
+    height: 75px;
+    font-family: $emphasisFont;
+        .title{
+            font-size: 2em;
+        }
+        .menu{
+            font-size: 1em;
+        }
 }

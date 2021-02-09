@@ -1,0 +1,12 @@
+@import "base.scss";
+
+footer {
+    background-color: $fhColor;
+    color: $lightText;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: $fhColor;
+    color: $lightText;
+    height: 50px;
+}
