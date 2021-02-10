@@ -1,0 +1,29 @@
+/*Variables used throughout*/
+
+$emphasisColor: #22223B;
+$fhColor: #4A4E69;
+$secondaryColor: #F2E9E4;
+
+$lightText: #fff;
+$darkText: #000;
+
+$emphasisFont: 'Ubuntu', Sans-Serif;
+$mainFont: 'Open Sans', Sans-Serif;
+
+/*Main styles*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #9A8C98;
+    font-family: $mainFont;
+}
+
+main {
+    flex: 2;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}

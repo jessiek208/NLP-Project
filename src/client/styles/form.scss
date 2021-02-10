@@ -1,0 +1,44 @@
+@import "base.scss";
+
+form{
+    border: 1px solid $emphasisColor;
+    border-radius: 3px;
+    padding: 40px;
+    background-color: #F7DFDE;
+    color: $darkText;
+    border-radius: 20px;
+}
+
+input{
+    padding: 5px 20px;
+    width: 100%;
+    line-height: 16px;
+    margin: 10px 0;
+        &[type=text]{
+            background-color: $secondaryColor;
+            color: $darkText;
+        }
+        &[type=submit]{
+            background-color: $emphasisColor;
+            color: $lightText;
+        }
+        &[type=submit]:hover{
+            background-color: $secondaryColor;
+            color:$darkText;
+        }
+    
+}
+
+#output{
+    background-color: $secondaryColor;
+    color: $darkText;
+    border-radius: 20px;
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#results{
+    font-family: $emphasisFont;
+}
