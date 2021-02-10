@@ -1,20 +1,14 @@
-import { handleSubmit, handleURL, postURL } from '../src/client/js/formHandler'
+import { handleSubmit, handleURL, postData } from '../src/client/js/formHandler'
+import 'regenerator-runtime/runtime'
 
-beforeAll(() => {
-    global.Client = jest.genMockFromModule('../webpack.dev.js');
-  });
+global.fetch = jest.fn(() =>
+    Promise.resolve({
+        json: () => Promise.resolve({ scoreTagData: { score_tag: 'NEU' } }),
+  })
+);
 
-describe("Test that the formHandler only calls the server with valid URLs", () => {
-    //global.postURL=jest.fn(() => {});
-    //beforeEach(() => postURL.mockClear());
-
-    test('Call the server with a valid URL', () => {
-        handleURL('http://www.example.com')
-        expect(postURL).toHaveBeenCalled();
-    })
-
-    test('Do not call the server with an invalid URL', () => {
-        handleURL('I AM NOT A URL')
-        expect(handleURL).toBeFalsy;
-    })
+it("Posts data for valid URL", async () => {
+    //test('Return truty value when given Google URL', () => {
+        postData('www.google.com')
+        expect(fetch).toHaveBeenCalledTimes(1);
 });
