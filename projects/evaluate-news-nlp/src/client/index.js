@@ -9,11 +9,8 @@ import './styles/header.scss'
 
 export {
     handleSubmit,
-    checkURL
+    checkURL,
    }
 
 //console.log(checkForName);
 console.log(checkURL);
-
-//alert("I EXIST")
-//onsole.log("CHANGE!!");
