@@ -9,3 +9,4 @@ Sources:
 Installation - 
 All versions can be found in package.json; versions had to be edited and do not reflect the versions in the lessons or original forked repo in many instances.
 
+To link an API Key for the MeaningCloud API, create a .env file in the root directory of the project and paste 'API_Key = ####' into the file. Use your API key isntead of ####.
